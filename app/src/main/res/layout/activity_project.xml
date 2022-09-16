@@ -51,6 +51,7 @@
         android:layout_marginBottom="5dp"
         android:text="Project name"
         android:textSize="20dp"
+        android:fontFamily="sans-serif-medium"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/project_name_background"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -96,6 +97,7 @@
         android:layout_marginBottom="5dp"
         android:text="Due date"
         android:textSize="20dp"
+        android:fontFamily="sans-serif-medium"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/due_date_background"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -121,9 +123,7 @@
         app:tint = "#8B86BE"
         app:layout_constraintTop_toTopOf="@id/due_date_background"
         app:layout_constraintBottom_toBottomOf="@id/due_date_background"
-        app:layout_constraintStart_toStartOf="@id/due_date_background"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="340dp" />
+        app:layout_constraintStart_toStartOf="@id/due_date_background" />
 
     <TextView
         android:id="@+id/due_date_text"
@@ -157,6 +157,7 @@
         android:layout_marginBottom="5dp"
         android:text="Remaining time"
         android:textSize="20dp"
+        android:fontFamily="sans-serif-medium"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/remaining_time_background"
         app:layout_constraintStart_toStartOf="parent"/>
