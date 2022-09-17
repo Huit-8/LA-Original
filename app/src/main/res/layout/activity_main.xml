@@ -22,7 +22,6 @@
         android:id="@+id/tool_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="40dp"
         android:elevation="4dp"
         android:background="#8B86BE"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"

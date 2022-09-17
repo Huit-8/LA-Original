@@ -34,10 +34,6 @@ class SettingFragment : Fragment() {
     ): View? {
         binding = FragmentSettingBinding.inflate(inflater,container,false)
 
-
-
-
-
         return binding.root
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -62,20 +58,6 @@ class SettingFragment : Fragment() {
             navController.navigate(action)
         }
     }
-
-
-
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//
-//        val myToolbar =
-//
-//
-//        binding.myToolbar.setNavigationIcon(R.drawable.ic_back)
-//
-//        myToolbar.setNavigationOnClickListener { view ->
-//            // Navigate somewhere
-//        }
-//    }
 
     //toolbarから歯車アイコンを消す
     override fun onPrepareOptionsMenu(menu: Menu){
