@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#86ABBA"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SettingFragment">
+
+    <ImageView
+        android:id="@+id/setting_circle_background"
+        android:layout_width="750dp"
+        android:layout_height="750dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="-45dp"
+        android:src="@drawable/circle_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_app_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="35dp"
+        android:text="App Setting"
+        android:textSize="28dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/time_pick_background"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/projects_background"
+        app:layout_constraintTop_toBottomOf="@id/title_app_setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/sub_title_activity_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"
+        android:text="Activity Time"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toTopOf="@id/time_pick_background"
+        app:layout_constraintStart_toStartOf="@id/time_pick_background"/>
+
+    <ImageView
+        android:id="@+id/time_pick_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:src="@drawable/watch"
+        app:tint = "#8B86BE"
+        app:layout_constraintTop_toTopOf="@id/sub_title_activity_time"
+        app:layout_constraintBottom_toBottomOf="@id/time_pick_background"
+        app:layout_constraintStart_toStartOf="@id/time_pick_background"/>
+
+    <TextView
+        android:id="@+id/first_activity_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:text="09:00"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintTop_toTopOf="@id/sub_title_activity_time"
+        app:layout_constraintBottom_toBottomOf="@id/time_pick_background"
+        app:layout_constraintStart_toEndOf="@id/time_pick_icon"/>
+
+    <TextView
+        android:id="@+id/support_activity_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp"
+        android:text="〜"
+        android:textSize="28dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintTop_toTopOf="@id/sub_title_activity_time"
+        app:layout_constraintBottom_toBottomOf="@id/time_pick_background"
+        app:layout_constraintStart_toEndOf="@id/first_activity_time_text"/>
+
+    <TextView
+        android:id="@+id/second_activity_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp"
+        android:text="22:00"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintTop_toTopOf="@id/sub_title_activity_time"
+        app:layout_constraintBottom_toBottomOf="@id/time_pick_background"
+        app:layout_constraintStart_toEndOf="@id/support_activity_time_text"/>
+
+
+    <TextView
+        android:id="@+id/title_user_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="35dp"
+        android:text="User Setting"
+        android:textSize="28dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintTop_toBottomOf="@id/time_pick_background"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/user_setting_background"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/projects_background"
+        app:layout_constraintTop_toBottomOf="@id/title_user_setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/sub_title_your_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"
+        android:text="Your Account"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toTopOf="@id/user_setting_background"
+        app:layout_constraintStart_toStartOf="@id/user_setting_background"/>
+
+    <ImageView
+        android:id="@+id/select_account_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="25dp"
+        android:src="@drawable/user"
+        app:tint = "#8B86BE"
+        app:layout_constraintTop_toTopOf="@id/sub_title_your_account"
+        app:layout_constraintBottom_toBottomOf="@id/user_setting_background"
+        app:layout_constraintStart_toStartOf="@id/user_setting_background"/>
+
+    <TextView
+        android:id="@+id/mail_account_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="italic"
+        android:text="eitoao88@gmail.com"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/user_setting_background"
+        app:layout_constraintStart_toEndOf="@id/select_account_icon"
+        app:layout_constraintTop_toTopOf="@id/sub_title_your_account" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

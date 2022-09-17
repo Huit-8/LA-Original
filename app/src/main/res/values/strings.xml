@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Original</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="string_format">%d/%02d/%02d</string>
+    <string name="string_format3">%2d/%2d</string>
 </resources>
