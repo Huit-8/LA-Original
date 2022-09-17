@@ -170,6 +170,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="15dp"
         android:fontFamily="sans-serif-black"
+        android:textStyle="italic"
         android:text="eitoao88@gmail.com"
         android:textColor="@color/black"
         android:textSize="20dp"

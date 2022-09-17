@@ -11,6 +11,8 @@ import app.aoyama.huit.original.databinding.FragmentHomeBinding
 
     lateinit var binding: FragmentHomeBinding
 
+     lateinit var db: AppDatabase
+
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
@@ -25,6 +27,16 @@ import app.aoyama.huit.original.databinding.FragmentHomeBinding
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentHomeBinding.inflate(inflater,container,false)
+
+        db = AppDatabase.getInstance(requireContext())!!
+
+        val projectList = db.projectDao().getAll()
+
+        val adapter = ProjectsRecyclerViewAdapter()
+
+        binding.homeRecyclerView.adapter = adapter
+        adapter.updateProject(projectList)
+
 
         //ProjectActivityへ遷移する準備をする
         val projectIntent = Intent(activity,ProjectActivity::class.java)
@@ -61,5 +73,10 @@ import app.aoyama.huit.original.databinding.FragmentHomeBinding
          super.onPrepareOptionsMenu(menu)
          val item = menu.findItem(R.id.back)
          item.isVisible = false
+     }
+
+     override fun onResume() {
+         super.onResume()
+
      }
 }

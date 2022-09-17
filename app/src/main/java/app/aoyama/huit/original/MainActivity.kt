@@ -19,11 +19,6 @@ class MainActivity : AppCompatActivity() {
         //toolbarをセットする
         setSupportActionBar(binding.toolBar)
 
-//        val navController = findNavController(R.id.host_fragment)
-//        val appBarConfiguration = AppBarConfiguration(navController.graph)
-//        setupActionBarWithNavController(navController, appBarConfiguration)
 
     }
-//    override fun onSupportNavigateUp()
-//            = findNavController(R.id.host_fragment).navigateUp()
 }
