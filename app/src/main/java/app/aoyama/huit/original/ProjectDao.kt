@@ -24,6 +24,10 @@ interface ProjectDao {
     @Query("delete from projects")
     fun deleteAll()
 
+    //データを削除
+    @Query("select max(pid) from projects")
+    fun getMaxPid(): Int
+
 //    @Query("select name from projects")
 //    fun getNameList(): List<Project>
 

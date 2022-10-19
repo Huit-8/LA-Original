@@ -16,4 +16,7 @@ data class Project (
     @ColumnInfo(name = "due")
     var due: String,
 
+    @ColumnInfo(name = "remain")
+    var remain: String?,
+
         )

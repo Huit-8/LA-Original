@@ -10,6 +10,19 @@ class ProjectsRecyclerViewAdapter : RecyclerView.Adapter<ProjectListViewHolder>(
 
     private val projectList: MutableList<Project> = mutableListOf()
 
+    //リスナーを格納する変数を定義
+    private lateinit var listener: OnProjectCellClickListener
+
+    //インターフェースを作成
+    interface OnProjectCellClickListener{
+        fun onItemClick(project: Project)
+    }
+
+    //リスナーをセット
+    fun setOnProjectCellClickListener(listener: OnProjectCellClickListener){
+        this.listener = listener
+    }
+
     //viewHolderの作成
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProjectListViewHolder {
         val binding =
@@ -22,6 +35,12 @@ class ProjectsRecyclerViewAdapter : RecyclerView.Adapter<ProjectListViewHolder>(
     override fun onBindViewHolder(holder: ProjectListViewHolder, position: Int) {
         val project = projectList[position]
         holder.binding.itemTextView.text = project.name
+
+        //セルのクリックイベントにリスナをセット
+        holder.itemView.setOnClickListener {
+            //セルがクリックされたときにインターフェースの処理が実行される
+            listener.onItemClick(project)
+        }
     }
 
     //ViewHolderの数の決定

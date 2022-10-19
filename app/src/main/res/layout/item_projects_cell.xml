@@ -20,7 +20,7 @@
         android:elevation="3dp"
         android:textSize="24sp"
         android:fontFamily="sans-serif-black"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/black"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/project_icon"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -30,6 +30,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/project"
+        app:tint="#8B86BE"
         app:layout_constraintTop_toTopOf="@id/itemTextView"
         app:layout_constraintBottom_toBottomOf="@id/itemTextView"
         app:layout_constraintStart_toStartOf="parent"
